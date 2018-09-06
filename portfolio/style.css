@@ -1,0 +1,250 @@
+
+ body {
+    overflow-x: hidden;
+    background: black;
+ }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*for content*/
+.col-lg-4, {
+	display: inline-block;
+	float: left;
+}
+
+.col-lg-2 {
+	display: inline-block;
+	float: left;
+
+}
+
+img {
+	 -webkit-filter: grayscale(2);
+}
+
+img:hover {
+	-webkit-filter: brightness(100%);
+	}
+
+
+
+video {
+    -webkit-filter: grayscale(2);
+    display: inline-block;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+}
+
+video:hover {-webkit-filter: brightness(100%);
+}
+
+p {
+	font-size: 15px;
+	text-align: justify-all;
+	font-style: roboto;
+	color:#999999;
+
+}
+
+#myvideo1 {
+	padding-top: 20%;
+	
+}
+
+#myvideo2 {
+	padding-top: 10%;
+}
+
+#myvideo3 {
+	padding-top: 10%;
+}
+
+#myvideo4 {
+	padding-top: 10%;
+}
+
+
+
+#content {
+    text-align: justify-all;
+    padding-top: 0;
+}
+
+
+.paral {
+min-height: 600px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+
+/* Paragrapgh for Parallax Section */ 
+.paral p {
+font-size: 24px;
+color:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+
+/* Heading for Parallax Section */ 
+.paral h1 {
+color: rgba(255, 255, 255, 0.8);
+font-size: 60px;
+text-align: center;
+padding-top: 60px;
+line-height: 100px;
+}
+
+/* Image for Parallax Section */ 
+.paralsec {
+background-image: url("images/family.jpg");
+}
+
+.paralsec1 {
+background-image: url("images/family.jpg");
+}
+
+.paralsec2 {
+background-image: url("images/img_4856.jpg");
+}
+
+.paralsec3 {
+background-image: url("images/crew.jpg");
+}
+
+.paralsec4 {
+background-image: url("images/img_0110.jpg");
+}
+
+/* Add more images for more sections */
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
+
+/* Footer */
+.wn-footer {
+padding: 2.5rem 0;
+text-align: center;
+color: white;
+background-color: #607D8B;
+border-top: .05rem solid #e5e5e5;
+}
